@@ -1,0 +1,17 @@
+.ipynb_checkpoints/
+pyjedai/__pycache__/
+pyjedai/.ipynb_checkpoints/
+examples/.ipynb_checkpoints/
+examples/scripts/.ipynb_checkpoints/
+tests/__pycache__/
+.hypothesis/unicode_data/11.0.0/charmap.json.gz
+src/pyjedai/__pycache__/
+src/pyjedai.egg-info/*
+docs/_build/*
+docs/code/_autosummary/*
+docs/tutorials/.ipynb_checkpoints/
+docs/tutorials/__pycache__/
+docs/pyjedai/__pycache__/
+docs/pyjedai/.ipynb_checkpoints/
+data/ccer/D2/gt_kaggle.csv
+*.pyc
