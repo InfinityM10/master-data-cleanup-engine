@@ -22,7 +22,7 @@ from queue import PriorityQueue
 from networkx import Graph
 from ordered_set import OrderedSet
 
-from pyjedai.datamodel import Block, Data
+from .datamodel import Block, Data
 
 # ----------------------- #
 # Constants

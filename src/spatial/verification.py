@@ -1,4 +1,4 @@
-from pyjedai.datamodel import SpatialData, PYJEDAIFeature
+from ..datamodel import SpatialData, PYJEDAIFeature
 from queue import PriorityQueue
 from functools import reduce
 from shapely import relate

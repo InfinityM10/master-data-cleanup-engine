@@ -1,6 +1,6 @@
 
 from tqdm.auto import tqdm
-from pyjedai.datamodel import SpatialData, PYJEDAIFeature
+from ..datamodel import SpatialData, PYJEDAIFeature
  
 from shapely.geometry import multipolygon
 from collections import defaultdict

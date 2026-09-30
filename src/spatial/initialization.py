@@ -1,6 +1,6 @@
 import math
 
-from pyjedai.datamodel import SpatialData, PYJEDAIFeature
+from ..datamodel import SpatialData, PYJEDAIFeature
 from queue import PriorityQueue
 from tqdm.auto import tqdm
 

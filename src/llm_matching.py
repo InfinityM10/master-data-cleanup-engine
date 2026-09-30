@@ -9,7 +9,7 @@ import networkx
 from time import time
 from tqdm import tqdm
 
-from pyjedai.vector_based_blocking import EmbeddingsNNBlockBuilding
+from .vector_based_blocking import EmbeddingsNNBlockBuilding
 
 DEFAULT_SYSTEM_PROMPT = """You are given two record descriptions and your task is to identify
 if the records refer to the same entity or not.
