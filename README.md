@@ -50,7 +50,6 @@ flowchart LR
 
 ## Tech stack
 
-- **Entity resolution:** [pyJedAI](https://github.com/AI-team-UoA/pyJedAI) (blocking, matching, clustering)
 - **Data processing:** Python, Pandas
 - **LLM adjudication:** LLM API with structured JSON output
 - **Serving:** FastAPI, Uvicorn
