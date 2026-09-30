@@ -56,69 +56,11 @@ flowchart LR
 - **Serving:** FastAPI, Uvicorn
 - **Packaging:** Docker
 
-## Project structure
-
-```
-master-data-cleanup-engine/
-├── data/                 # benchmark and sample datasets
-├── notebooks/            # exploration and evaluation notebooks
-├── src/
-│   ├── ingest.py         # loading and standardisation
-│   ├── pipeline.py       # blocking, matching, clustering (pyJedAI)
-│   ├── adjudicate.py     # LLM review of low-confidence pairs
-│   ├── golden_record.py  # survivorship rules and merging
-│   └── api.py            # FastAPI service
-├── tests/
-├── Dockerfile
-├── requirements.txt
-└── README.md
-```
-
 ## Getting started
 
 ```bash
 git clone https://github.com/InfinityM10/master-data-cleanup-engine.git
 cd master-data-cleanup-engine
-pip install -r requirements.txt
-```
-
-Run the resolution pipeline:
-
-```bash
-python src/pipeline.py --config configs/default.yaml
-```
-
-Start the API:
-
-```bash
-uvicorn src.api:app --reload
-```
-
-Or with Docker:
-
-```bash
-docker build -t data-cleanup-engine .
-docker run -p 8000:8000 data-cleanup-engine
-```
-
-## API example
-
-```bash
-curl -X POST http://localhost:8000/resolve \
-  -H "Content-Type: application/json" \
-  -d '{"name": "ACME Corporation Ltd", "city": "Bangalore", "email": "billing@acme.com"}'
-```
-
-```json
-{
-  "entity_id": "ENT-000123",
-  "match_confidence": 0.94,
-  "golden_record": {
-    "name": "Acme Corporation",
-    "city": "Bangalore",
-    "email": "billing@acme.com"
-  }
-}
 ```
 
 ## Results
